@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+	color: #ffffff;
+	background: linear-gradient(135deg, #1a1a1a, #000000);
+	font-family: 'Porsche Next', sans-serif;
+	text-align: center;
+    overflow-y: scroll;
+}
+
+/* Menú */
+.menuprincipal {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 3.3rem;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.menuprincipal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menuprincipal ul li a {
+    display: block; 
+    padding: 0.9rem 1.5rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menuprincipal ul li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*Portada principal*/
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.portada-contenido {
+    max-width: 56rem;
+    margin-top: 16%;
+}
+
+.portada h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.portada-subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    position: fixed;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.test {
+    list-style: none;
+    padding: 0;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.redes i {
+    font-size: 2rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.8;
+}
+
+.redes i:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* PÁGINAS DE MOTORES */
+
+.motor {
+    padding: 7rem 2rem 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo-motor {
+    width: 180px;
+    margin-bottom: 2rem;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.contenedor-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tarjeta {
+    background-color: rgba(255,255,255,0.08);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.tarjeta ul {
+    list-style: none;
+    padding: 0;
+}
+
+.juegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.juego {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.logo-motor {
+    height: 20rem;
+    width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.logo-godot {
+    height: 20rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+}
+
+/* RESPONSIVE MOVIL */
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Menú */
+
+    .menuprincipal {
+        height: auto;
+        position: relative;
+    }
+
+    .menuprincipal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuprincipal ul li {
+        width: 100%;
+    }
+
+    .menuprincipal ul li a {
+        padding: 1rem;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    /* Portada */
+
+    .portada {
+        min-height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .portada-contenido {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .portada h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .portada-subtitulo {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Footer */
+
+    footer {
+        position: relative;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+}
